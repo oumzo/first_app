@@ -8,6 +8,10 @@ gem 'rails', '3.2.16'
 
 gem 'sqlite3-ruby', '1.3.2', :group => :development
 
+group :production do
+  gem 'pg', '0.15.1'
+  gem 'rails_12factor'
+end
 
 # Gems used only for assets and not required
 # in production environments by default.
